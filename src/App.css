@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+.home-page {
+  min-height: 100vh;
+  background-image: url(./images/film-back2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.home-desc {
+  color: #fff;
+  padding: 40vh 3vw;
+}
+.intr {
+  padding: 1rem;
+  width: 70%;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 6px 2px 6px #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.full-op {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+.btn-group {
+  padding: 0 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 767px) {
+  .home-desc {
+    color: #fff;
+    padding: 30vh 1rem;
+  }
+  .intr {
+    padding: 0 1rem;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 2rem;
+  }
+  .full-op {
+    color: rgba(255, 220, 220, 0.9);
+    font-size: 1.25rem;
+    padding: 0 1.25rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .btn-group {
   }
 }
+.sub-intro {
+  width: 100%;
+  padding: 5rem;
+}
+.footer {
+  height: 20vh;
+}
 
-.App-header {
-  background-color: #282c34;
+.add-movie {
+  width: 100%;
+  border: 3px solid #fff;
+  color: #fff;
+  display: flex;
+  height: 5vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 3rem;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(80, 197, 183, 0.9);
+}
+@media (max-width: 768px) {
+  .search {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+  }
+  .add-movie {
+    width: 100%;
+
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: small;
+  }
+}
+.movies {
+  background-image: linear-gradient(
+      to right,
+      rgba(80, 197, 183, 0.15),
+      rgba(80, 197, 183, 0.65)
+    ),
+    url(./images/watchBack.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.input-search::placeholder {
+  color: #000;
+}
+
+.details {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(80, 197, 183, 0.75),
+      rgba(80, 197, 183, 0.15)
+    ),
+    url(./images/redBAck.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.info {
+  min-height: 100vh;
+  padding: 5rem 1rem 0 1rem;
+  color: #fff;
+  background-image: linear-gradient(
+      to right,
+      rgba(245, 246, 252, 0.32),
+      rgba(80, 197, 183, 0.75)
+    ),
+    url("./images/backMore.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.App-link {
-  color: #61dafb;
+.info > h1 {
+  font-size: bold;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.info > h3 {
+  font-size: medium;
+  padding-left: 2rem;
+}
+.form {
+  padding: 1rem 2rem;
+  border-top: 1px solid #ababab;
+  width: 40vw;
+  margin: 1.75rem auto 0 auto;
+  border: 2px solid #fff;
+  box-shadow: 3px 4px 10px #fff;
+}
+@media (max-width: 500px) {
+  .form {
+    width: 89vw;
   }
 }
